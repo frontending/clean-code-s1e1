@@ -113,7 +113,7 @@ input#new-task {
   width: 318px;
 }
 
-p > button:hover {
+section > button:hover {
   color: #0fc57c;
 }
 
