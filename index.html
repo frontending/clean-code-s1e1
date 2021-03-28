@@ -8,16 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="body-element">
     <header class="header-element">
       <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main-element">
       <section>
-        <label for="new-task">Add Item</label>
+        <label class="new-task">Add Item</label>
         <article class="task-wrapper">
-          <input id="new-task"class="task" type="text">
+          <input id="new-task" class="task input-task" type="text">
           <button>Add</button>
         </article>
       </section>
@@ -43,7 +43,7 @@
         </li>
       </ul>
       <h3>Completed</h3>
-      <ul id="completed-tasks">
+      <ul class="completed-tasks" id="completed-tasks">
         <li>
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
