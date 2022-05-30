@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.more-inf {
+.info__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task {
   display: flex;
 }
 
@@ -73,8 +73,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,12 +101,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+.main > section:nth-child(1) > h3 {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__new {
   width: 318px;
 }
 
@@ -151,7 +150,7 @@ li > input[type="text"] {
 }
 
 /* Completed */
-#completed-tasks label {
+.completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
