@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body class="body">
+    <header class="info">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix picture">
+      <a class="info__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main class="main">
+      <section>
+        <h3>Add Item</h3>
+        <div class="add-task">
+          <input class="task add-task__new" type="text">
+          <button>Add</button>
+        </div>
+      </section>
+      <section>
+        <h3>Todo</h3>
+        <ul class="incomplete-tasks">
+          <li>
+            <input type="checkbox">
+            <label class="task incomplete-tasks__task">Pay Bills</label>
+            <input type="text" class="task">
+            <button class="edit incomplete-tasks__edit">Edit</button>
+            <button class="delete incomplete-tasks__delete">
+              <img src="./remove.svg" alt="">
+            </button>
+          </li>
+          <li class="edit-mode">
+            <input type="checkbox">
+            <label class="task edit-mode__task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task">
+            <button class="edit edit-mode__edit">Save</button>
+            <button class="delete edit-mode__delete">
+              <img src="./remove.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Completed</h3>
+        <ul class="completed-tasks">
+          <li>
+            <input type="checkbox" checked>
+            <label class="task completed-tasks__task">See the Doctor</label>
+            <input type="text" class="task">
+            <button class="edit completed-tasks__edit">Edit</button>
+            <button class="delete completed-tasks__delete">
+              <img src="./remove.svg" alt="">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
